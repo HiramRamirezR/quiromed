@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiromed - Fisioterapia y Bienestar</title>
+    <meta name="description"
+        content="En Quiromed ofrecemos fisioterapia profesional, masajes terapéuticos, ajuste quiropráctico y rehabilitación personalizada para aliviar tu dolor y mejorar tu movilidad.">
+
+    <!-- Fuentes e Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.1.0/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tu archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-info">
+                <span><i class="fas fa-phone"></i> +52 221 603 7309</span>
+                <span><i class="fas fa-envelope"></i> contacto@quiromed.com</span>
+                <span><i class="fas fa-clock"></i> Lun - Sáb: 10:00 - 19:00</span>
+            </div>
+            <div class="topbar-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#inicio" class="logo">
+                <div class="logo-icon"><i class="fas fa-hand-holding-medical"></i></div>
+                <div class="logo-text">
+                    <h2>Quiromed</h2>
+                    <span>Fisioterapia y Bienestar</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto" class="btn btn-primary nav-cta">Agendar Cita</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-star"></i> Fisioterapia profesional certificada</span>
+                <h1>Recupera tu bienestar físico con <span>atención personalizada</span></h1>
+                <p>En Quiromed aliviamos tu dolor, mejoramos tu movilidad y te ayudamos a recuperar tu salud mediante
+                    técnicas especializadas y un enfoque humano.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-white"><i class="fas fa-calendar-check"></i> Agenda tu cita</a>
+                    <a href="#servicios" class="btn btn-outline"><i class="fas fa-arrow-right"></i> Ver servicios</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Pacientes atendidos</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Tratamientos especializados</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Atención personalizada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png"
+                        alt="Consultorio de Quiromed">
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag">Sobre Nosotros</span>
+                    <h2>Tu salud es nuestra prioridad</h2>
+                    <p>En Quiromed ofrecemos un servicio de fisioterapia profesional enfocado en aliviar el dolor,
+                        mejorar la movilidad y ayudarte a recuperar tu bienestar físico de forma segura y personalizada.
+                    </p>
+                    <p>Atendemos problemas musculares, articulares y lesiones ocasionadas por malas posturas, trabajo,
+                        deporte o desgaste físico, utilizando técnicas especializadas y equipos terapéuticos para
+                        acelerar tu recuperación.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Profesionales capacitados</h4>
+                                <p>Equipo especializado en fisioterapia y quiropráctica</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-clipboard-list"></i>
+                            <div>
+                                <h4>Valoración personalizada</h4>
+                                <p>Tratamientos adaptados a tus necesidades específicas</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-hospital"></i>
+                            <div>
+                                <h4>Ambiente profesional</h4>
+                                <p>Espacio cómodo equipado con tecnología terapéutica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2>Tratamientos especializados para tu salud</h2>
+                <p>Contamos con una amplia gama de servicios enfocados en aliviar dolor, mejorar la movilidad y promover
+                    tu bienestar físico.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Masaje Relajante</h3>
+                    <p>Disminuye estrés, ansiedad y tensión muscular, brindando relajación y bienestar general.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-hand-fist"></i></div>
+                    <h3>Masaje Descontracturante</h3>
+                    <p>Alivia contracturas, dolor muscular y tensión acumulada en espalda, cuello y piernas.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-running"></i></div>
+                    <h3>Descarga Muscular</h3>
+                    <p>Ideal para personas con fatiga muscular o actividad física intensa. Mejora el rendimiento físico.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-bone"></i></div>
+                    <h3>Ajuste Quiropráctico</h3>
+                    <p>Mejora la movilidad de columna y articulaciones, disminuyendo tensión y molestias musculares.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>Fisioterapia y Rehabilitación</h3>
+                    <p>Tratamientos personalizados para lesiones musculares, articulares y dolor físico.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-person-rays"></i></div>
+                    <h3>Terapia Lumbar y Cervical</h3>
+                    <p>Disminuye dolor de espalda baja, cuello y tensión muscular causada por malas posturas.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-droplet"></i></div>
+                    <h3>Drenaje Linfático</h3>
+                    <p>Favorece la circulación y ayuda a disminuir inflamación y retención de líquidos.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-face-smile-beam"></i></div>
+                    <h3>Limpieza Facial Profunda</h3>
+                    <p>Elimina impurezas y células muertas, dejando la piel más limpia y luminosa.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-fire-flame-curved"></i></div>
+                    <h3>Masajes Reductivos</h3>
+                    <p>Mejoran la apariencia corporal, estimulan circulación y complementan tratamientos estéticos.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-shoe-prints"></i></div>
+                    <h3>Plantillas Ortopédicas</h3>
+                    <p>Mejoran postura, pisada y molestias relacionadas con el apoyo del pie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Beneficios</span>
+                <h2>¿Por qué elegir la fisioterapia?</h2>
+                <p>Nuestros tratamientos están diseñados para mejorar tu calidad de vida de forma integral y sostenible.
+                </p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><i class="fas fa-shield-heart"></i></div>
+                    <div>
+                        <h4>Disminuye el dolor e inflamación</h4>
+                        <p>Alivio efectivo de molestias musculares y articulares.</p>
+                    </div>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><i class="fas fa-arrows-up-down-left-right"></i></div>
+                    <div>
+                        <h4>Mejora la movilidad</h4>
+                        <p>Recupera tu rango de movimiento natural con flexibilidad.</p>
+                    </div>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><i class="fas fa-user-shield"></i></div>
+                    <div>
+                        <h4>Previene lesiones futuras</h4>
+                        <p>Fortalece y protege tu cuerpo a largo plazo.</p>
+                    </div>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                    <div>
+                        <h4>Recuperación más rápida</h4>
+                        <p>Acelera tu proceso de rehabilitación de forma efectiva.</p>
+                    </div>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><i class="fas fa-heart"></i></div>
+                    <div>
+                        <h4>Mejora la calidad de vida</h4>
+                        <p>Bienestar físico y mental para tu día a día.</p>
+                    </div>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><i class="fas fa-medal"></i></div>
+                    <div>
+                        <h4>Mayor rendimiento físico</h4>
+                        <p>Optimiza tu desempeño deportivo y laboral.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Galería</span>
+                <h2>Nuestro espacio terapéutico</h2>
+                <p>Un ambiente profesional, cómodo y equipado para brindarte la mejor atención.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/1f60c43b5-7384-44e0-b054-88bce6e0e8f3.png"
+                        alt="Fisioterapia">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png"
+                        alt="Consultorio">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/115426ba2-5b87-4db8-862b-0e2a6400fb77.png"
+                        alt="Masaje terapéutico">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>¿Listo para recuperar tu bienestar?</h2>
+                <p>Agenda tu cita hoy y recibe una atención personalizada con los mejores especialistas.</p>
+                <a href="#contacto" class="btn btn-white"><i class="fas fa-calendar-check"></i> Agendar mi cita
+                    ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contacto</span>
+                <h2>Agenda tu cita con nosotros</h2>
+                <p>Estamos aquí para ayudarte. Escríbenos y te responderemos a la brevedad.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Información de contacto</h3>
+                    <p>Completa el formulario o contáctanos directamente por cualquiera de nuestros canales.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>[Tu dirección aquí]</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 221 603 7309</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contacto@quiromed.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Sáb: 10:00 - 19:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <h3>Envíanos un mensaje</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" required placeholder="+52 ...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="tucorreo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio de interés *</label>
+                        <select id="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="Masaje Relajante">Masaje Relajante</option>
+                            <option value="Masaje Descontracturante">Masaje Descontracturante</option>
+                            <option value="Descarga Muscular">Descarga Muscular</option>
+                            <option value="Ajuste Quiropráctico">Ajuste Quiropráctico</option>
+                            <option value="Fisioterapia">Fisioterapia y Rehabilitación</option>
+                            <option value="Terapia Lumbar">Terapia Lumbar y Cervical</option>
+                            <option value="Drenaje Linfático">Drenaje Linfático</option>
+                            <option value="Limpieza Facial">Limpieza Facial Profunda</option>
+                            <option value="Masajes Reductivos">Masajes Reductivos</option>
+                            <option value="Plantillas Ortopédicas">Plantillas Ortopédicas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" placeholder="Cuéntanos sobre tu situación o dudas..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon"><i class="fas fa-hand-holding-medical"></i></div>
+                        <div class="logo-text">
+                            <h2>Quiromed</h2>
+                            <span>Fisioterapia y Bienestar</span>
+                        </div>
+                    </div>
+                    <p>Tu salud es nuestra prioridad. Ofrecemos tratamientos personalizados para aliviar el dolor y
+                        recuperar tu bienestar físico.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Masajes</a></li>
+                        <li><a href="#servicios">Fisioterapia</a></li>
+                        <li><a href="#servicios">Quiropráctica</a></li>
+                        <li><a href="#servicios">Rehabilitación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +52 221 603 7309</li>
+                        <li><i class="fas fa-envelope"></i> contacto@quiromed.com</li>
+                        <li><i class="fas fa-clock"></i> Lun - Sáb: 10:00 - 19:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quiromed. Todos los derechos reservados. | Diseñado con ❤️ para tu bienestar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/522216037309?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank"
+        class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Tu archivo JS externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
