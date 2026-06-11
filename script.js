@@ -50,15 +50,25 @@ if (contactForm) {
             return;
         }
 
-        // Aquí podrías enviar a un backend o WhatsApp
-        const mensaje = `Hola, soy ${nombre}. Me interesa el servicio de ${servicio}.Teléfono: ${telefono}.`;
-        const url = `https://wa.me/522216037309?text=${encodeURIComponent(mensaje)}`;
-        window.open(url, '_blank');
+        const formData = new FormData(contactForm);
 
-        formMessage.className = 'form-message success';
-        formMessage.textContent = '✅ ¡Gracias ' + nombre + '! Tu mensaje ha sido enviado. Te contactaremos pronto.';
-        contactForm.reset();
-        setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        }).then(() => {
+            const mensaje = `Hola, soy ${nombre}. Me interesa el servicio de ${servicio}. Teléfono: ${telefono}.`;
+            const url = `https://wa.me/522216037309?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+
+            formMessage.className = 'form-message success';
+            formMessage.textContent = '✅ ¡Gracias ' + nombre + '! Tu mensaje ha sido enviado. Te contactaremos pronto.';
+            contactForm.reset();
+            setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
+        }).catch(() => {
+            formMessage.className = 'form-message error';
+            formMessage.textContent = '⚠️ Hubo un error al enviar el formulario. Intenta de nuevo.';
+        });
     });
 }
 

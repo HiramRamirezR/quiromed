@@ -20,7 +20,7 @@
         content="Fisioterapia profesional, masajes terapéuticos, ajuste quiropráctico y rehabilitación personalizada. Alivia tu dolor y mejora tu movilidad.">
     <meta property="og:url" content="https://quiromed.netlify.app/">
     <meta property="og:image"
-        content="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png">
+        content="img/hero-bg.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Consultorio de Quiromed - Fisioterapia y Bienestar">
@@ -31,7 +31,7 @@
     <meta name="twitter:description"
         content="Fisioterapia profesional, masajes terapéuticos, ajuste quiropráctico y rehabilitación personalizada.">
     <meta name="twitter:image"
-        content="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png">
+        content="img/hero-bg.png">
 
     <!-- Fuentes e Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.1.0/index.css">
@@ -48,13 +48,13 @@
         <div class="container topbar-inner">
             <div class="topbar-info">
                 <span><i class="fas fa-phone"></i> +52 221 603 7309</span>
-                <span><i class="fas fa-envelope"></i> contacto@quiromed.com</span>
+                <span><i class="fas fa-envelope"></i> quiromedcentrointegral@gmail.com</span>
                 <span><i class="fas fa-clock"></i> Lun - Sáb: 10:00 - 19:00</span>
             </div>
             <div class="topbar-social">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com/Quiromed" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/quiromed2024" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/522216037309?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
@@ -63,11 +63,7 @@
     <header>
         <nav class="navbar">
             <a href="#inicio" class="logo">
-                <div class="logo-icon"><i class="fas fa-hand-holding-medical"></i></div>
-                <div class="logo-text">
-                    <h2>Quiromed</h2>
-                    <span>Fisioterapia y Bienestar</span>
-                </div>
+                <img src="img/quiromed.jpeg" alt="Quiromed" class="logo-img">
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
@@ -116,7 +112,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png"
+                    <img src="img/hero-bg.png"
                         alt="Consultorio de Quiromed">
                 </div>
                 <div class="about-content reveal">
@@ -287,15 +283,15 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item reveal">
-                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/1f60c43b5-7384-44e0-b054-88bce6e0e8f3.png"
+                    <img src="img/fisio.jpg"
                         alt="Fisioterapia">
                 </div>
                 <div class="gallery-item reveal">
-                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png"
+                    <img src="img/hero-bg.png"
                         alt="Consultorio">
                 </div>
                 <div class="gallery-item reveal">
-                    <img src="https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/115426ba2-5b87-4db8-862b-0e2a6400fb77.png"
+                    <img src="img/benefits-bg.png"
                         alt="Masaje terapéutico">
                 </div>
             </div>
@@ -330,7 +326,7 @@
                         <i class="fas fa-location-dot"></i>
                         <div>
                             <h4>Dirección</h4>
-                            <p>[Tu dirección aquí]</p>
+                            <p>Av. Juarez 88, Chapultepec, Cp 72320, Heroica Puebla de Zaragoza</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -344,7 +340,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>contacto@quiromed.com</p>
+                            <p>quiromedcentrointegral@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -356,7 +352,8 @@
                     </div>
                 </div>
 
-                <form class="contact-form reveal" id="contactForm">
+                <form class="contact-form reveal" id="contactForm" name="contacto" netlify>
+                    <input type="hidden" name="form-name" value="contacto">
                     <h3>Envíanos un mensaje</h3>
                     <div class="form-row">
                         <div class="form-group">
@@ -407,19 +404,14 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo">
-                        <div class="logo-icon"><i class="fas fa-hand-holding-medical"></i></div>
-                        <div class="logo-text">
-                            <h2>Quiromed</h2>
-                            <span>Fisioterapia y Bienestar</span>
-                        </div>
+                        <img src="img/quiromed.jpeg" alt="Quiromed" class="logo-img">
                     </div>
                     <p>Tu salud es nuestra prioridad. Ofrecemos tratamientos personalizados para aliviar el dolor y
                         recuperar tu bienestar físico.</p>
                     <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com/Quiromed" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/quiromed2024" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/522216037309?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -444,13 +436,15 @@
                     <h4>Contacto</h4>
                     <ul>
                         <li><i class="fas fa-phone"></i> +52 221 603 7309</li>
-                        <li><i class="fas fa-envelope"></i> contacto@quiromed.com</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:quiromedcentrointegral@gmail.com">quiromedcentrointegral@gmail.com</a></li>
+                        <li><i class="fas fa-location-dot"></i> Av. Juarez 88, Chapultepec, Cp 72320, Heroica Puebla de Zaragoza</li>
                         <li><i class="fas fa-clock"></i> Lun - Sáb: 10:00 - 19:00</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Quiromed. Todos los derechos reservados. | Diseñado con ❤️ para tu bienestar.</p>
+                <p class="footer-credit">Hecho por <a href="https://blauklug.netlify.app/" target="_blank" rel="noopener noreferrer">blauklug</a></p>
             </div>
         </div>
     </footer>

@@ -180,6 +180,12 @@ header {
     gap: 10px;
 }
 
+.logo-img {
+    max-height: 50px;
+    width: auto;
+    border-radius: 8px;
+}
+
 .logo-icon {
     width: 44px;
     height: 44px;
@@ -261,7 +267,7 @@ header {
 .hero {
     position: relative;
     min-height: 600px;
-    background: linear-gradient(135deg, rgba(14, 116, 144, 0.85), rgba(8, 145, 178, 0.75)), url('https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/1f60c43b5-7384-44e0-b054-88bce6e0e8f3.png') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(14, 116, 144, 0.85), rgba(8, 145, 178, 0.75)), url('../img/fisio.jpg') center/cover no-repeat;
     color: var(--white);
     display: flex;
     align-items: center;
@@ -638,7 +644,7 @@ section {
 
 /* ===== CTA ===== */
 .cta-section {
-    background: url('https://image.qwenlm.ai/public_source/fe238d20-0042-4b15-b45b-6f52fa706831/15e767a4f-b4a7-45ec-80d5-f45f405eaa69.png') center/cover no-repeat;
+    background: url('../img/hero-bg.png') center/cover no-repeat;
     position: relative;
     padding: 100px 0;
     text-align: center;
